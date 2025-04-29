@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ひぐらし</title>
+    <link rel="stylesheet" href="higurashi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html">
+        <img src="higurashi/higurashi01.png" alt="ひぐらしロゴ"
+      /></a>
+    </div>
+    <header class="header">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <nav>
+        <ul class="nav" id="nav">
+          <li><a href="#live">Live</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#release">Release</a></li>
+          <li><a href="member.html">Members</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="sns">
+        <a href="https://x.com/_sonohigurashii?s=11"
+          ><img src="higurashi/twitter.png" class="sns-img" alt="Twitter"
+        /></a>
+        <a href="https://www.youtube.com/@sonohigurashii"
+          ><img src="higurashi/youtube.png" class="sns-img" alt="Youtube"
+        /></a>
+        <a href="https://www.instagram.com/_sonohigurashii/"
+          ><img src="higurashi/instagram.png" class="sns-img" alt="instagram"
+        /></a>
+        <a href="https://www.tiktok.com/@_sonohigurashii?_t=ZS-8v9UOteebXM&_r=1"
+          ><img src="higurashi/tiktok.png" class="sns-img" alt="tiktok"
+        /></a>
+      </div>
+    </header>
+    <section class="torioki-form">
+      <h1 class="torioki-title">6/3 下北沢LIVEHOLIC お取り置きフォーム</h1>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdr0G7CackzAJw3LGatMRZ5dGmyPiTSQHIAs7fAdauxJXcvXw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted = true;"
+      >
+        <label for="name">名前</label>
+        <input type="text" id="name" name="entry.1272025657" required />
+
+        <label for="quantity">枚数</label>
+        <input type="number" id="quantity" name="entry.1743586196" required />
+
+        <input type="submit" value="送信" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img
+          class="footerlogo"
+          src="higurashi/higurashi01.png"
+          alt="ひぐらしロゴ"
+        />
+      </div>
+      <ul class="footer-nav">
+        <div>
+          <li><a href="#live">Live</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#release">Release</a></li>
+        </div>
+        <div>
+          <li><a href="higurashi-toha.html">Members</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="sns-footer">
+          <a href="#"
+            ><img src="higurashi/twitter.png" class="sns-img" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img src="higurashi/youtube.png" class="sns-img" alt="Youtube"
+          /></a>
+          <a href="https://www.instagram.com/_sonohigurashii/"
+            ><img src="higurashi/instagram.png" class="sns-img" alt="instagram"
+          /></a>
+          <a href="#"
+            ><img src="higurashi/tiktok.png" class="sns-img" alt="tiktok"
+          /></a>
+        </div>
+      </ul>
+    </footer>
+
+    <!-- 非表示のiframeで画面遷移を防ぎつつ、送信完了を検知 -->
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="showThanks();"
+    ></iframe>
+
+    <!-- メッセージ表示用 -->
+    <p
+      id="thank-you-message"
+      style="
+        display: none;
+        color: #ad4747;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      "
+    >
+      送信ありがとうございます！
+    </p>
+
+    <script>
+      let submitted = false;
+
+      function showThanks() {
+        document.querySelector("form").reset(); // フォームをリセット
+        document.getElementById("thank-you-message").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
