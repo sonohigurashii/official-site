@@ -137,6 +137,18 @@ body {
   margin: 0 auto;
   transition: all 0.3s ease; /* スムーズな変化 */
 }
+.torioki-link-box-music {
+  width: 30vw;
+  height: 6vh;
+  background-color: #ffffff; /* 白背景 */
+  border: 1px solid #170101; /* 黒い枠線 */
+  border-radius: 5px; /* 四角っぽく（角を少し丸め） */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.3s ease; /* スムーズな変化 */
+}
 
 .torioki-link-box:hover {
   background-color: #170101; /* 背景を黒に */
@@ -238,6 +250,7 @@ body {
   overflow: hidden;
   padding: 0 18px;
   background-color: #f9f9f9;
+  line-height: 24px;
 }
 /*About*/
 .title {
