@@ -471,20 +471,6 @@ form input[type="submit"]:hover {
     height: 15vh;
     padding-right: 13px;
   }
-  .live ul {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
-  .live ul li {
-    width: 100%;
-    box-sizing: border-box; /* ←これ超大事！パディングも含めて幅を管理 */
-    flex-direction: column;
-  }
-
-  .live-date {
-    margin-bottom: 3vh;
-  }
 
   .sns-img {
     height: 28px;
@@ -709,7 +695,7 @@ form input[type="submit"]:hover {
   .torioki-kochira {
     display: inline; /* 要素をインライン表示 */
   }
-}
+ 
 @media screen and (min-width: 769px) {
   .break-pc {
     display: block; /* PC版で改行を適用 */
