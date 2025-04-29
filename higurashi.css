@@ -250,7 +250,7 @@ body {
   overflow: hidden;
   padding: 0 18px;
   background-color: #f9f9f9;
-  line-height: 24px;
+  line-height: 30px;
 }
 /*About*/
 .title {
@@ -694,6 +694,9 @@ form input[type="submit"]:hover {
   }
   .torioki-kochira {
     display: inline; /* 要素をインライン表示 */
+  }
+  .about-text{
+    line-height: 2.5;
   }
  
 @media screen and (min-width: 769px) {
